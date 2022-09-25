@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formularios</title>
+</head>
+<body>
+<form action="pagina-processa-dados-do-form" method="post">
+	<fieldset>
+		<legend>Dados Gerais</legend>
+		<label for="nome">Nome:</label>
+		<input type="text" minlength="3" id="nome" placeholder="Escreva seu primeiro nome" />
+		<label for="data de nascimento">Data de Nascimento:</label>
+		<input type="text" id="data_nascimento"/>
+		<label for="cpf">CPF:</label>
+		<input type="cpf" maxlength="11" id="cpf" required/>
+	</fieldset>
+	<fieldset>
+		<legend>Endereço</legend>
+
+		<label for="tipo_endereco">Tipo:</label>
+		<select id="tipo_endereco">
+			<option value="">Selecione</option>
+			<option value="rua">Rua</option>
+			<option value="estrada">Estrada</option>
+			<option value="rodovia">Rodovia</option>
+			<option value="outros">Outros</option>
+		</select>
+		<label for="logadouro_endereco">Logadouro:</label>
+		<input type="text" id="logadouro_endereco">
+		<label for="numero_endereco">Nº</label>
+		<input type="text" id="numero_endereco" placeholder="Numero da Casa">
+		<label for="complemento_endereco">Complemento:</label>
+		<input type="text" id="complemento_endereco">
+	</fieldset>
+	<fieldset>
+		<legend>Fale Conosco</legend>
+
+		<label for="msg">Mensagem:</label>
+		<textarea id="msg"></textarea>
+	</fieldset>
+	<fieldset>
+		<button type="submit">Enviar Mensagem</button>
+		<button type="reset">Limpar o Formulário</button>
+	</fieldset>
+</form>
+</body>
+</html>

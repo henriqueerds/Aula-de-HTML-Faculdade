@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Criando Tabelas</title>
+</head>
+<!--Tabela Simples-->
+<body>
+<center><h1>Tabelas</h1></center>
+<p>
+	<table width="50%" border="1">
+		<tr>
+			<th colspan="3">Tabela Simples</th>
+		</tr>
+		<tr>
+			<td>Alex</td>
+			<td>Html</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>Anna</td>
+			<td>HTML</td>
+			<td>10</td>
+		</tr>
+	</table>
+</p>
+<br>
+
+<!-- Tabela Com Titulo-->
+<p>
+	<table width="50%" border="1">
+		<thead>
+			<tr>
+				<th colspan="3">Tabela com Titulo</th>
+			</tr>
+		</thead>
+		<tr>
+			<th>Aluno</th>
+			<th>Disciplina</th>
+		  <th>Nota</th>
+		</tr>
+	    <tr>
+	    	<td>Alex</td>
+	    	<td>Html</td>
+	    	<td>10</td>
+		</tr>
+	    <tr>
+	    	<td>Anna</td>
+	    	<td>HTML</td>
+	    	<td>10</td>
+	    </tr>
+	</table>
+</p>
+<br>
+
+<!-- Tabela Com Cabeçalho e roda pé-->
+<p>
+	<table width="50%" border="1">
+		<thead>
+			<tr>
+				<th colspan="2">Tabela com Cabeçalho</th>
+			</tr>
+		</thead>
+		<thead>
+			<tr>
+				<th>Mês</th>
+				<th>Horas/Aulas</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Junho</td>
+				<td>40</td>
+			</tr>
+			<tr>
+				<td>Julho</td>
+				<td>30</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>Total</td>
+				<td>70</td>
+			</tr>
+		</tfoot>
+	</table>
+</p>
+<br>
+
+<p>
+	<!-- Tabela Com Colspan-->
+	<table width="50%" border="1">
+		<tr>
+			<th colspan="3">Tabela com Colspan</th>
+		</tr>
+		<tr>
+			<th>Aluno</th>
+			<th colspan="2">Disciplinas</th>
+		</tr>
+		<tr>
+			<td>Alex</td>
+			<td>Html</td>
+			<td>Ambiente Web</td>
+		</tr>
+	</table>
+</p>
+<br>
+<p>
+	<!-- Tabela Com rolspan-->
+	<table width="50%" border="1">
+		<tr>
+			<th colspan="2">Tabela com Rolspan</th>
+		</tr>
+		<tr>
+			<th>Alunos:</th>
+			<th>Alex</th>
+		</tr>
+		<tr>
+			<th rowspan="2">Disciplina:</th>
+			<td>HTML</td>
+		</tr>
+		<tr>
+			<td>Ambiente Web</td>
+		</tr>
+</p>
+</body>
+</html>
